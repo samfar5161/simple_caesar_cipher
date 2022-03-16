@@ -16,17 +16,14 @@ The code is documented to explain function arguments, althought I can't stress e
     - Takes a string of encrypted text and a key. Returns decrypted text.
 
 4. Bruteforce Decrypt Text
-    - Takes a string of encrypted text as the only argument. Decrypts the text 26 times with every possible key. Outputs all 26 decryptions.
+    - Takes a string of encrypted text as the only argument. Decrypts the text 26 times with every possible key. Outputs all 26 decryptions. 
 
 
-
-2 additional functions have been added to deal with uppercase characters during the encryption/decryption process. They are called in the encrypt and decrypt methods. There is 
-definitely a better way to handle this issue, but currently this works.
-
-1. get uppercase character index 
+* added 3/16
+5. get uppercase character index 
     - returns a list of where the uppercase characters are located in the text string so that they can be corrected by their index
 
-2. apply uppercase index
+6. apply uppercase index
     - makes the modifications.
 
 
